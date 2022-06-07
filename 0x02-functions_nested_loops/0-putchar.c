@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* main - Prints Holberton as a message.
+* main - Prints _putcharon as a message.
 *
 * Return: Always 0 (Success)
 */
