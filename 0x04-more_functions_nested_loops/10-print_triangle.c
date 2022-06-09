@@ -16,5 +16,4 @@ if (i < (size - 1))
 _putchar('\n');
 }
 _putchar('\n');
-_putchar('\n');
 }
