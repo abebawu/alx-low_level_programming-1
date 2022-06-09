@@ -15,7 +15,7 @@ for (h=size;h-1>a;h--)
 {
 _putchar(' ');
 }
-for (h=0;h- 1<a;h++)
+for (h=0;h-1<a;h++)
 {
 _putchar('#');
 }
