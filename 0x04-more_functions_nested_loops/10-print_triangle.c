@@ -5,15 +5,19 @@
 * Return: no return. */
 void print_triangle(int size)
 {
-int i, j;
-for (i = 0; i < size; i++)
-{
-for (j = 1; j < (size - i); j++)
-_putchar(' ');
-for (j--; j < size; j++)
-_putchar(35);
-if (i < (size - 1))
+int h;
+int a;
+if (size <= 0)
 _putchar('\n');
+for (a = 0; a < size; a++)
+{
+for (h = size; h - 1 > a; h--)
+{
+_putchar(' ');
+}
+for (h = 0; h - 1 < a; h++)
+{
+_putchar('#');
 }
 _putchar('\n');
 }
