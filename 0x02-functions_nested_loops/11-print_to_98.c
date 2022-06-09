@@ -9,19 +9,41 @@
 */
 void print_to_98(int n)
 {
-if (n > 98)
+while (n != 98)
 {
-for (; n > 98; n--)
+if (n >= 98)
 {
-printf("%d, ", n);
+if (n >= 100)
+_putchar((n / 100) + '0');
+_putchar(((n / 10) % 10) + '0');
+_putchar((n % 10) + '0');
+n--;
 }
-}
-else if (n < 98)
+else if (n < 0)
 {
-for (; n < 98; n++)
+_putchar('-');
+n = (n * -1);
+if (n >= 100)
+_putchar((n / 100) + '0');
+if (n >= 10)
+_putchar(((n / 10) % 10) + '0');
+_putchar((n % 10) + '0');
+n--;
+n = (n * -1);
+}
+else if (n >= 0)
 {
-printf("%d, ", n);
+if (n >= 10)
+{
+_putchar((n / 10) + '0');
 }
+_putchar((n % 10) + '0');
+n++;
 }
-printf("%dn", n);
+_putchar(',');
+_putchar(' ');
+}
+_putchar((n / 10) + '0');
+_putchar((n % 10) + '0');
+_putchar('\n');
 }
